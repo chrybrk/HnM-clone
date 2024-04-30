@@ -1,3 +1,3 @@
 # H&M Clone
 
-![Screenshot](https://raw.github.com/chryrbrk/HnM-clone/main/screenshot.png)
+![Screenshot](https://github.com/chrybrk/HnM-clone/blob/main/screenshot.png)
