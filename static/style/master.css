@@ -1,0 +1,304 @@
+:root {
+    --fsize: 16px;
+    --family: "HM Regular", monospace;
+    --text-color: #252222;
+    --bg-color: #FAF9F8;
+    --primary-color: #E50010;
+    --secondary-color: #E4E4E4;
+    --accent-color: #222222;
+    --banner-image-url: none;
+    --prod-image: none;
+}
+
+@font-face {
+    font-family: 'H&m Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('H&m Regular'), url('HM.woff') format('woff');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: var(--fsize);
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+.navigation-bar nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.navigation-bar nav .navigation-service {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 0rem 0rem 0.8rem;
+}
+
+.navigation-bar nav .navigation-service > * {
+    margin: 1rem 0rem 0rem 0rem;
+    padding: 10px;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: var(--family);
+}
+
+.navigation-button-download-app svg {
+    width: 40px;
+    height: 15px;
+
+    fill: none;
+    stroke: var(--text-color);
+    stroke-width: 0.9;
+    transition: stroke .350s ease;
+    transform: translateY(-2px);
+}
+
+.navigation-button-download-app svg:hover {
+    stroke: var(--primary-color);
+}
+
+.navigation-bar .navigation-logo {
+    font-family: "H&m Regular";
+    font-size: 1.8rem;
+    margin: 3.5rem 0rem 0rem 14rem;
+    color: var(--primary-color);
+    text-align: center;
+    cursor: pointer;
+}
+
+.navigation-bar .navigation-user-profile {
+    margin: 0.5rem 0rem 0rem 16rem;
+    justify-content: right;
+    color: var(--text-color);
+    text-decoration: none;
+    font-family: var(--family);
+}
+
+.navigation-bar .navigation-user-profile > ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 0rem 0rem 0rem;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.navigation-bar .navigation-user-profile > ul > li {
+    margin-right: 0.8rem;
+}
+
+.navigation-bar .navigation-user-profile > ul > li > span {
+    font-size: 0.7rem;
+}
+
+.navigation-bar .navigation-user-profile > ul > li > img {
+    transform: translateY(8px);
+}
+
+.navigation-bar .navigation-menu {
+    margin-top: 3rem;
+    width: 100%;
+    text-align: center;
+    color: var(--text-color);
+    font-size: 1rem;
+    font-family: var(--family);
+    cursor: pointer;
+}
+
+.navigation-bar .navigation-menu ul {
+    list-style: none;
+}
+
+.navigation-bar .navigation-menu ul li {
+    display: inline-block;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.navigation-bar .navigation-menu ul li:hover {
+    text-decoration: underline;
+}
+
+.navigation-bar .navigation-menu .search-bar {
+    display: block;
+    float: right;
+    border-bottom: 1px solid black;
+    margin-right: 2rem;
+    transform: translateY(-35px);
+    width: 16%;
+}
+
+.navigation-bar .navigation-menu img {
+    width: 25px;
+    height: 25px;
+    transform: translateY(5px) translateX(5px);
+}
+
+.navigation-bar .navigation-menu input {
+    background-color: var(--bg-color);
+    font-size: 0.8rem;
+    padding: 10px;
+    border: none;
+}
+
+.navigation-bar .navigation-menu input:focus {
+    outline: none;
+}
+
+.navigation-bar .navigation-product-handler {
+    display: block;
+    transform: translateX(40px);
+}
+
+.navigation-bar .navigation-product-handler ul {
+    list-style: none;
+    text-align: right;
+}
+
+.navigation-bar .navigation-product-handler ul li {
+    margin-top: 3rem;
+    margin-right: 70px;
+    display: inline-block;
+    word-spacing: -2px;
+    font-size: 0.7rem;
+    font-family: var(--family);
+}
+
+.banner {
+    background: url("../images/banner-bg-01.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 8rem;
+    width: 70%;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.banner .banner-title {
+    font-weight: bold;
+    font-size: 0.9rem;
+    font-family: var(--family);
+    padding-top: 1rem;
+}
+
+.banner .banner-subtitle {
+    font-size: 0.7rem;
+    font-family: var(--family);
+    padding-top: 0.3rem;
+}
+
+.banner .banner-button-stack {
+    margin-top: 1.1rem;
+}
+
+.banner .banner-button-stack button {
+    background-color: var(--text-color);
+    color: var(--secondary-color);
+    border: none;
+    font-family: var(--family);
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0.4rem 0.6rem 0.4rem 0.6rem;
+    transition: background-color .350s ease;
+}
+
+.banner .banner-button-stack button:hover {
+    background-color: #444;
+}
+
+.product-showcase {
+    background: var(--prod-image);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 10%;
+    height: 96vh;
+    width: 70%;
+    margin: 2rem auto;
+    text-align: center;
+    position: relative;
+}
+
+.product-heading, .product-title, .product-subtitle, .product-button-stack {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
+
+.product-heading {
+    margin: 14rem auto;
+    word-spacing: 10px;
+    color: var(--bg-color);
+    font-size: 1rem;
+    font-family: var(--family);
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.product-showcase .product-title {
+    margin: 10rem auto;
+    font-size: 2.5rem;
+    color: var(--bg-color);
+    font-family: var(--family);
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.product-subtitle {
+    margin: 8rem auto;
+    font-size: 1rem;
+    color: var(--bg-color);
+    font-family: var(--family);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.product-showcase .product-button-stack {
+    margin: 4rem auto;
+    font-size: 2rem;
+    word-spacing: 10px;
+}
+
+.product-showcase .product-button-stack button {
+    color: var(--text-color);
+    font-family: var(--family);
+    font-weight: bold;
+    background-color: var(--bg-color);
+    border: none;
+    padding: 0.4rem 0.6rem 0.4rem 0.6rem;
+    transition: background-color .350s ease;
+}
+
+.product-showcase .product-button-stack button:hover {
+    background-color: #CCC;
+}
+
+.product-detail-card {
+    position: absolute;
+    margin: 18rem 0rem 0rem 2rem;
+    padding: 0.4rem;
+    width: 22%;
+    height: 5rem;
+    border-radius: 5px;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    text-align: left;
+}
+
+.product-detail-stock, .product-detail-price, .product-detail-name
+{
+    font-size: 0.9rem;
+    font-family: var(--family);
+    font-weight: bold;
+    margin: 0.3rem 0rem 0rem 0.9rem;
+}
+
+.product-detail-card .product-detail-stock {
+    color: var(--primary-color);
+    font-size: 0.8rem;
+}
