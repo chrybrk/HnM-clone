@@ -269,6 +269,68 @@ nav, .item-service, .item-user-detail ul {
     transform: translateX(5rem) translateY(-5rem);
 }
 
+.sc-img svg .outerElement { fill: none; }
+.sc-img svg .innerElement { stroke: var(--text-color); }
 .sc-img svg .innerElement:hover {
     fill: var(--primary-color);
+    stroke: none;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    height: 35rem;
+}
+
+.footer-information {
+    display: flex;
+    flex-direction: row;
+}
+
+.item {
+    margin: 4rem 0rem 0rem 14rem;
+}
+
+.item:nth-child(2), .item:nth-child(3) {
+    margin: 4rem -6rem 0rem 12rem;
+}
+
+.item > div:nth-child(1) {
+    margin-bottom: 0.4rem;
+}
+
+.item .item-list ul li {
+    font-size: 0.8rem;
+    margin-bottom: 0.2rem;
+}
+
+.item .item-list ul li:hover {
+    text-decoration: underline;
+}
+
+.item p {
+    font-size: 0.8rem;
+    max-width: 14rem;
+    margin-top: 2rem;
+}
+
+.item > div img {
+    transform: translateY(0.4rem);
+}
+
+.social-stuff ul {
+}
+
+.social-stuff ul li {
+    display: inline-block;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.social-stuff ul li a button {
+    background-color: none;
+    border: none;
+}
+
+.social-stuff ul li:hover {
+    background-color: none;
 }
