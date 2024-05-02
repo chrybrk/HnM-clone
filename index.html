@@ -1,17 +1,23 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <title>H&M | Online Fashion, Homeware and Kids clothes | H&M IN</title>
-    <link href="static/style/master.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H&M | Online Fashion,Homeware & kids clothes| H&M IN</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="icon" href="hnm.png" type="image/x-icon" />
+    <script defer src="static/js/main.js"></script>
 </head>
+
 <body>
-    <section class="navigation-bar">
-        <nav>
-            <div class="navigation-service">
-                <a href="#">Customer Service</a>
-                <a href="#">Newsletter</a>
-                <a href="#">Find a store</a>
-                <div class="navigation-button-download-app">
+    <header>
+        <nav class="header-items">
+            <div class="item-service">
+                <a href="https://www2.hm.com/en_in/customer-service.html">Customer Service</a>
+                <a href="https://www2.hm.com/en_in/customer-service/newsletter.html">Newsletter</a>
+                <a href="https://www2.hm.com/en_in/customer-service/shopping-at-hm/store-locator.html">Find a store</a>
+                <div class="dropdown-app-store">
                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
                        <circle cx="5" cy="10" r="2.5" style="" />
                        <circle cx="13" cy="10" r="2.5" style="" />
@@ -19,8 +25,10 @@
                     </svg>
                 </div>
             </div>
-            <div class="navigation-logo">H&M</div>
-            <div class="navigation-user-profile">
+
+            <div class="item-brand">H&M</div>
+
+            <div class="item-user-detail">
                 <ul>
                     <li>
                         <img src="static/images/user.png" alt="user" />
@@ -37,74 +45,137 @@
                 </ul>
             </div>
         </nav>
+    </header>
 
-        <div class="navigation-menu">
-            <div class="menu-item">
-                <ul>
-                    <li>Ladies</li>
-                    <li>Men</li>
-                    <li>Baby</li>
-                    <li>Kids</li>
-                    <li>H&M HOME</li>
-                    <li>Sport</li>
-                    <li>Sale</li>
-                    <li>Sustainability</li>
-                </ul>
-                <div class="search-bar">
-                    <img src="static/images/search.png" />
-                    <input type="text" value="" placeholder="Search Products" />
+    <main>
+        <div class="menu-item">
+            <ul>
+                <li>Ladies</li>
+                <li>Men</li>
+                <li>Baby</li>
+                <li>Kids</li>
+                <li>H&M HOME</li>
+                <li>Sport</li>
+                <li>Sale</li>
+                <li>Sustainability</li>
+            </ul>
+            <div class="search-bar">
+                <img height="25px" src="static/images/search.png" />
+                <input type="text" value="" placeholder="Search Products" />
+            </div>
+        </div>
+
+        <div class="banner banner-vsmall">
+            <ul class="list-hr">
+                <li>Estimated delivery time: 2-7 days</li>
+                <li>Members get free shipping above Rs.1999</li>
+                <li>Free & Flexible 15 days return</li>
+            </ul>
+        </div>
+
+        <div class="banner banner-small" style="--banner-image-url: url('../images/banner-small01.jpg');">
+            <div class="text text-small text-bold pt" style="--pt: 1.4rem;">Style simplified</div>
+            <div class="text text-vsmall pt" style="--pt: 0.4rem;">Graphic & basic tee's starting ₹699</div>
+            <button class="dark-btn mt" style="--mt: 1rem;">Womenswear</button>
+            <button class="dark-btn">Menswear</button>
+            <button class="dark-btn">Kidswear</button>
+        </div>
+
+        <div class="banner banner-large" style="--banner-image-url: url('../images/bb01.avif');">
+            <div class="price-tag" style="--tag-x: 24rem; --tag-y: 20rem;">
+                <div class="tag clight pt" style="--pt: 0.4rem;">Rs.900.00</div>
+                <div class="name clight">Ribbed Bodycon Dress</div>
+                <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" focusable="false" direction="down">
+                    <path d="m0 .4c0 .6.2 1.1.7 1.5l7.5 6.7c.9.8.9 2.2 0 3l-7.5 6.7c-.5.3-.7.8-.7 1.3z" transform="rotate(90, 10, 10)"></path>
+                </svg>
+            </div>
+            <div class="banner-container">
+                <div class="text text-large text-bold clight">Season-ready dresses</div>
+                <button class="light-btn mt" style="--mt: 6rem;">Shop Now</button>
+            </div>
+        </div>
+
+        <div class="banner banner-large" style="--banner-image-url: url('../images/bb02.avif');">
+            <div class="banner-container">
+                <div class="text text-small text-bold clight">SEASON'S KEYS</div>
+                <div class="text text-large text-bold clight">Summer sophistication</div>
+                <div class="text text-vsmall text-bold clight mt" style="--mt: 3.4rem;">Pared-back essential meet sartorial cues.</div>
+                <button class="light-btn mt" style="--mt: 1.4rem;">Shop Now</button>
+            </div>
+        </div>
+
+        <div class="banner banner-medium">
+            <div class="scroll-header">
+                <div class="sh-text">New Arrivals</div>
+                <button class="sh-btn sh-btn-active">Ladies</button>
+                <button class="sh-btn">Men</button>
+                <button class="sh-btn">Divided</button>
+                <button class="sh-btn">Baby</button>
+                <button class="sh-btn">Kids</button>
+                <button class="sh-btn">H&M HOME</button>
+                <button class="sh-btn">Sport</button>
+            </div>
+            <div class="scroll-content">
+                <div class="sc-img">
+                    <img src="static/images/sh01.jpg" alt="" />
+                    <div class="tag cdark pt" style="--pt: 0.4rem;">Rs.900.00</div>
+                    <div class="name cdark">Ribbed Bodycon Dress</div>
+                </div>
+                <div class="sc-img">
+                    <img src="static/images/sh01.jpg" alt="" />
+                    <div class="tag cdark pt" style="--pt: 0.4rem;">Rs.900.00</div>
+                    <div class="name cdark">Ribbed Bodycon Dress</div>
+                </div>
+                <div class="sc-img">
+                    <img src="static/images/sh01.jpg" alt="" />
+                    <div class="tag cdark pt" style="--pt: 0.4rem;">Rs.900.00</div>
+                    <div class="name cdark">Ribbed Bodycon Dress</div>
+                </div>
+                <div class="sc-img">
+                    <img src="static/images/sh01.jpg" alt="" />
+                    <div class="tag cdark pt" style="--pt: 0.4rem;">Rs.900.00</div>
+                    <div class="name cdark">Ribbed Bodycon Dress</div>
                 </div>
             </div>
         </div>
 
-        <div class="navigation-product-handler">
-                <ul>
-                    <li>Estimated delivery time: 2-7 days</li>
-                    <li>Members get free shipping above Rs.1999</li>
-                    <li>Free & Flexible 15 days return</li>
-                </ul>
+        <div class="banner banner-large" style="--banner-image-url: url('../images/bb03.avif');">
+            <div class="price-tag" style="--tag-x: 34rem; --tag-y: 28rem;">
+                <div class="tag clight pt" style="--pt: 0.4rem;">Rs.900.00</div>
+                <div class="name clight">Cresed leg jersey</div>
+                <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" focusable="false" direction="down">
+                    <path d="m0 .4c0 .6.2 1.1.7 1.5l7.5 6.7c.9.8.9 2.2 0 3l-7.5 6.7c-.5.3-.7.8-.7 1.3z" transform="rotate(90, 10, 10)"></path>
+                </svg>
+            </div>
+            <div class="banner-container">
+                <div class="text text-large text-bold clight">Seasonal classics</div>
+                <button class="light-btn mt" style="--mt: 4.4rem;">2-8Y</button>
+                <button class="light-btn mt" style="--mt: 4.4rem;">9-14Y</button>
+            </div>
         </div>
-    </section>
 
-    <main>
-        <section class="banner">
-            <div class="banner-title">Style simplified</div>
-            <div class="banner-subtitle">Graphic & basic tee's starting $699</div>
-            <div class="banner-button-stack">
-                <button>Womenswear</button>
-                <button>Menswear</button>
-                <button>Kidswear</button>
-            </div>
-        </section>
+        <div class="banner banner-small" style="--banner-image-url: url('../images/banner-small02.jpg');">
+            <div class="text text-small text-bold clight pt" style="--pt: 1.4rem;">Bedroom favourites</div>
+            <div class="text text-vsmall clight pt" style="--pt: 0.4rem;">Never shopped from H&M home? Visit "My account page" for special offer.</div>
+            <button class="light-btn mt" style="--mt: 1rem;">Shop Now</button>
+            <button class="light-btn mt" style="--mt: 1rem;">My account</button>
+        </div>
 
-        <section class="product-showcase" style="--prod-image: url('../images/model03.jpg');">
-            <div class="product-detail-card">
-                <div class="product-detail-stock">Out of stock</div>
-                <div class="product-detail-price">Rs.799.00</div>
-                <div class="product-detail-name">Ribbed bodycon dress></div>
+        <div class="banner banner-large" style="--banner-image-url: url('../images/bb04.avif');">
+            <div class="price-tag" style="--tag-x: 14rem; --tag-y: 8rem;">
+                <div class="tag clight pt" style="--pt: 0.4rem;">Rs.2,299.00</div>
+                <div class="name clight">Oversized Linen Shirt</div>
+                <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" focusable="false" direction="down">
+                    <path d="m0 .4c0 .6.2 1.1.7 1.5l7.5 6.7c.9.8.9 2.2 0 3l-7.5 6.7c-.5.3-.7.8-.7 1.3z" transform="rotate(90, 10, 10)"></path>
+                </svg>
             </div>
-            <div class="product-title">Season-ready dresses</div>
-            <div class="product-button-stack">
-                <button>Shop Now</button>
+            <div class="banner-container">
+                <div class="text text-large text-bold clight">Modern Costal Edit</div>
+                <button class="light-btn mt" style="--mt: 4.4rem;">Shop Now</button>
             </div>
-        </section>
+        </div>
 
-        <section class="product-showcase" style="--prod-image: url('../images/model02.jpg');">
-            <div class="product-detail-card">
-                <div class="product-detail-stock">Full of stocks</div>
-                <div class="product-detail-price">Rs.6969.00</div>
-                <div class="product-detail-name">The Stripper</div>
-            </div>
-            <div class="product-heading">SEASON'S KEYS</div>
-            <div class="product-title">Summer sophistication</div>
-            <div class="product-subtitle">Pared-back essentials meet sartorial cues.</div>
-            <div class="product-button-stack">
-                <button>Shop Now</button>
-            </div>
-        </section>
     </main>
-
-    <footer>
-    </footer>
 </body>
+
 </html>
