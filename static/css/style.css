@@ -169,6 +169,7 @@ nav, .item-service, .item-user-detail ul {
 .pt { padding-top: var(--pt); }
 .mt { margin-top: var(--mt); }
 .text { height: 1rem; }
+.text-vvsmall { font-size: 0.5rem; }
 .text-vsmall { font-size: 0.8rem; }
 .text-small { font-size: 1.2rem; }
 .text-mid { font-size: 2rem; }
@@ -238,7 +239,7 @@ nav, .item-service, .item-user-detail ul {
     font-weight: bolder;
     color: var(--text-color);
     background-color: transparent;
-    border: 2px solid var(--text-color);
+    border: 1px solid var(--text-color);
     border-radius: 20px;
     cursor: pointer;
 }
@@ -249,13 +250,25 @@ nav, .item-service, .item-user-detail ul {
     border: 2px solid var(--primary-color);
 }
 
-.scroll-content {
+.photo {
     display: flex;
     flex-direction: row;
 }
+
+.sc-hide { display: none; }
 
 .sc-img img {
     height: 19rem;
     width: 13.75rem;
     margin: 1rem 1rem 0rem 0.6rem;
+}
+
+.sc-img svg {
+    height: 25px;
+    width: 25px;
+    transform: translateX(5rem) translateY(-5rem);
+}
+
+.sc-img svg .innerElement:hover {
+    fill: var(--primary-color);
 }
