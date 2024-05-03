@@ -17,12 +17,18 @@
                 <a href="https://www2.hm.com/en_in/customer-service.html">Customer Service</a>
                 <a href="https://www2.hm.com/en_in/customer-service/newsletter.html">Newsletter</a>
                 <a href="https://www2.hm.com/en_in/customer-service/shopping-at-hm/store-locator.html">Find a store</a>
-                <div class="dropdown-app-store">
+                <div class="dropdown-app-store" id="das">
                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
                        <circle cx="5" cy="10" r="2.5" style="" />
                        <circle cx="13" cy="10" r="2.5" style="" />
                        <circle cx="21" cy="10" r="2.5" style="" />
                     </svg>
+                    <div id="das_menu">
+                        <ul>
+                            <li>Download Android</li>
+                            <li>Download iOS</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
@@ -31,8 +37,16 @@
             <div class="item-user-detail">
                 <ul>
                     <li>
-                        <img src="static/images/user.png" alt="user" />
+                        <img id="sim" src="static/images/user.png" alt="user" />
                         <span>Sign in</span>
+                        <div id="sign_in_menu">
+                            <button>Sign In</button>
+                            <ul>
+                                <li>My account</li>
+                                <li>H&M Membership</li>
+                                <li>Not a member yet? Join here!</li>
+                            </ul>
+                        </div>
                     </li>
                     <li>
                         <img src="static/images/fav.png" alt="fav" />
